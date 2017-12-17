@@ -1,4 +1,7 @@
-FROM python:3.5
+FROM revolutionsystems/python:3.6.3-wee-optimized-lto
+ENV PYTHONUNBUFFERED 1
+# Requirements have to be pulled and installed here, otherwise caching won't work
+RUN apt-get update && apt-get install -y git build-essential
 
 ENV PYTHONUNBUFFERED 1
 
