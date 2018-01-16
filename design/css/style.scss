@@ -1,7 +1,8 @@
 @import "./scss/bootstrap.scss";
 
-$font_name: "Maison Neue Mono";
-$default_font: $font_name, -apple-system,  system-ui, sans-serif;
+$mono_font_name: "Maison Neue Mono";
+$normal_font_name: "Maison Neue";
+$default_font: $normal_font_name, -apple-system,  system-ui, sans-serif;
 $site_color: #000000;
 $primary_color: #02efa8;
 $text_color: white;
@@ -17,14 +18,14 @@ $line-height: $defualt-font-line-height) {
   font-size: $font_size;
 }
 @font-face {
-  font-family: $font_name;
+  font-family: $normal_font_name;
   src: url("./fonts/MaisonNeue-Book.eot?#iefix");
   src: url("./fonts/MaisonNeue-Book.eot?#iefix") format("embedded-opentype"),
     url("./fonts/MaisonNeueWEB-Book.woff") format("woff"),
     url("./fonts/MaisonNeue-Book.svg#@{icon-font-svg-id}") format("svg");
 }
 @font-face {
-  font-family: "Maison Neue Mono";
+  font-family: $mono_font_name;
   src: url("./fonts/MaisonNeue-Mono.eot?#iefix");
   src: url("./fonts/MaisonNeue-Mono.eot?#iefix") format("embedded-opentype"),
     url("./fonts/maisonneuemono.ttf") format("ttf"),
@@ -45,12 +46,23 @@ button {
 a {
   text-decoration: none;
 }
-// button { // &.primary { // background-color: $primary_color;
-// }
-// }
+
+button {
+  padding: 15px 44px !important;
+  border: none !important;
+  font-weight: 700 !important;
+  border-radius: 0 !important;
+  color: black !important;
+}
+
 .bg-dark {
   background-color: black !important;
 }
+
+.text-green {
+  color: $primary_color;
+}
+
 #navbar {
   background-color: black;
   .navbar-nav {
@@ -58,13 +70,6 @@ a {
     .nav-item {
       margin-right: 40px;
       text-transform: uppercase;
-      button {
-        padding: 15px 44px;
-        border: none;
-        font-weight: 700;
-        border-radius: 0;
-        color: black;
-      }
     }
   }
   @media (min-width: $desktop) {
@@ -92,6 +97,7 @@ a {
 }
 
 #header-section, #speakers-section {
+  font-family: $mono_font_name;
   h1 {
     color: $primary_color;
     text-transform: uppercase;
@@ -99,7 +105,7 @@ a {
     font-size: 64px;
     line-height: 74px;
     @media(max-width:$mobile){
-      font-size: 3.5rem;
+      font-size: 2rem;
     }
   }
   p {
@@ -122,21 +128,116 @@ a {
   }
 }
 
+.section-description {
+  opacity: 0.06;
+  color: #000000;
+  font-family: "Maison Neue Mono";
+  margin-top: 45px;
+  font-size: 59px;
+  letter-spacing: 10px;
+  line-height: 71px;
+  @media(max-width:$mobile){
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+  }
+}
+
+#bottom-description {
+  /*Breakout of bootstrap container and grid*/
+  margin:1em -97% !important; /* old browsers (without calc) fallback */
+  margin:1em calc(50% - 47vw) !important;
+
+  margin-top: 110px !important;
+  padding-top: 90px;
+  background-color: #F7F7F7;
+
+  h2 {
+    font-size: 32px;
+  }
+
+  p {
+    font-family: $mono_font_name;
+    color: #000000;
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  button {
+    font-size: 16px;
+    @media(max-width:$mobile){
+      font-size: 13px;
+      font-weight: bold !important;
+      padding: 15px !important;
+    }
+  }
+}
+
+
+/* Styles for the home page */
+
 #header-section {
   background: url("../img/backgrounds/pycon-homepage-bg.jpg");
   background-size: cover;
 }
+
+/* End styles for the home page */
+
+
+/* Styles for the speakers page */
 
 #speakers-section {
   background: url("../img/backgrounds/speaker-page-bg.jpg");
   background-size: cover;
 }
 
-.section-description {
-  opacity: 0.06;
+#speaker {
   color: #000000;
-  font-family: "Maison Neue Mono";
-  font-size: 59px;
-  letter-spacing: 10px;
-  line-height: 71px;
+  margin-top: 45px;
+  h1, h2 {
+    color: #11BD8A;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: -35px;
+    font-family: $mono_font_name;
+    font-size: 17px;
+    li {
+      line-height: 34px;
+      margin-top: 24px;
+    }
+    li:last-child {
+      font-family: $normal_font_name;
+    }
+  }
+
+  .speaker-name {
+    padding-top: 20px;
+  }
+
+  .speaker-image {
+    height: 351px;
+    width: 268px;
+  }
+
+  .speaker-description {
+    @media(min-width:$desktop){
+      margin-left: -39px;
+    }
+  }
+
+  p {
+    font-family: $mono_font_name;
+    font-size: 17px;
+  }
 }
+
+/* End styles for Speaker's page */
