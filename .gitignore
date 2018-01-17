@@ -83,3 +83,6 @@ tags
 new.env
 .vscode
 design/dist
+
+# Parcel-bundler
+/design/dist
