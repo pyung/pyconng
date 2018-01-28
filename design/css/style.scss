@@ -45,16 +45,22 @@ button {
   font-family: $default_font;
     --text-color: #0BB784;
 }
-a {
+
+a, .link-button {
   text-decoration: none;
 }
 
-button {
+button, .link-button {
   padding: 15px 44px !important;
   border: none !important;
   font-weight: 700 !important;
   border-radius: 0 !important;
   color: black !important;
+  @media(max-width:$mobile){
+    font-size: 13px;
+    font-weight: bold !important;
+    padding: 15px !important;
+  }
 }
 
 .bg-dark {
@@ -67,13 +73,13 @@ button {
 
 @import "./navbar.scss";
 
-#header-section, #speakers-section {
+#header-section, #speakers-section, #purchase-tickets-section {
   font-family: $mono_font_name;
   h1 {
     color: $primary_color;
     text-transform: uppercase;
     letter-spacing: 10px;
-    font-size: 64px;
+    font-size: 54px;
     line-height: 74px;
     @media(max-width:$mobile){
       font-size: 2rem;
@@ -205,5 +211,9 @@ h3.section-title{
 
 /* Styles for the speakers page */
 @import "./speakers.scss";
+
+/*Styles for the purchase tickets page*/
+@import "./purchase-tickets.scss";
+
 /* End styles for Speaker's page */
 @import "./footer.scss";

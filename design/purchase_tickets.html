@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/style.scss">
+    <!-- Bootstrap CSS -->
+
+    <title>Purchase Tickets</title>
+  </head>
+
+  <body>
+
+    <div id="purchase-tickets-section" class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <img class="logo" src="./img/logo-light.svg" />
+            <p>>>> Purchase Tickets</p>
+            <h1 class="display-4">Python Conference 2018</h1>
+            <p class="lead">
+              September 15 — 17, 2018
+              08:00AM - O5:00PM
+              Lagos, Nigeria
+            </p>
+          </div>
+
+          <div class="col-md-6 offset-md-1">
+            <div class="form-content">
+              <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#personal-info" role="tab" aria-selected="true">1. PERSONAL INFO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#make-payment" role="tab" aria-selected="false">2. MAKE PAYMENT</a>
+                </li>
+              </ul>
+    
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="personal-info" role="tabpanel">
+                  <form>
+                    <div class="form-group">
+                      <label for="first_name">pythonista.first_name</label>
+                      <input type="text" class="form-control" id="first_name" placeholder="Enter your first name here" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="last_name">pythonista.last_name</label>
+                      <input type="text" class="form-control" id="last_name" placeholder="Enter your last name here" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">pythonista.email</label>
+                      <input type="text" class="form-control" id="email" placeholder="Enter your email address here" required>
+                    </div>
+
+                    <div class="alert alert-warning" role="alert">
+                      By providing a password, you’ll get access to speaker keynotes and development resources.
+                    </div>
+
+                    <div class="form-group">
+                      <label for="password">pythonista.password</label>
+                      <input type="password" class="form-control" id="password" placeholder="Enter that hashed password here :-)" required>
+                    </div>
+
+                    <a href="#make-payment" class="link-button btn btn-block btn-success">CONTINUE TO STEP 2.</a>
+                  </form>
+                </div>
+
+                <div class="tab-pane fade" id="make-payment" role="tabpanel">
+                  <form>
+                    <ul class="container">
+                      <li class="row">
+                        <div class="col-sm-9">
+                          <p>Student ticket</p>
+                          <span>N3,000</span>
+                        </div>
+                        <div class="col-sm-3">
+                          <select>
+                            <option>1</option>
+                          </select>
+                        </div>
+                      </li>
+
+                      <li class="row">
+                        <div class="col-sm-9">
+                          <p>Individual ticket</p>
+                          <span>N6,000</span>
+                        </div>
+                        <div class="col-sm-3">
+                          <select>
+                            <option>1</option>
+                          </select>
+                        </div>
+                      </li>
+
+                      <li class="row">
+                        <div class="col-sm-9">
+                          <p>Corporate ticket</p>
+                          <span>N12,000</span>
+                        </div>
+                        <div class="col-sm-3">
+                          <select>
+                            <option>1</option>
+                          </select>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <p>Have a discount code? <a href="#">Click here</a></p>
+
+                    <button type="submit" class="btn btn-block btn-success">CHECKOUT</button>
+
+                    <div id="tickets-summary" class="row">
+                      <p class="col-sm-12 col-md-4">QTY: 3</p>
+                      <p class="col-sm -12 col-md-8 total-fee">TOTAL FEE: N21,000</p>
+                    </div>
+
+                    <div id="tickets-payment-option" class="row">
+                      <div class="col-sm-12 text-center">
+                        Verve, MasterCard, Visa
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p class="text-center">COPYRIGHT 2017. PYCON NIGERIA 2018</p>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+
+</html>

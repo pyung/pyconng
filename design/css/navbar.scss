@@ -14,7 +14,7 @@
     @media(min-width: $desktop){
       background-color: transparent !important;
     }
-    & + #header-section, & + #speakers-section {
+    & + #header-section, & + #speakers-section, & + #purchase-tickets-section {
       margin-top: -70px;
       padding-top: 120px;
       @media (min-width: $desktop) {
