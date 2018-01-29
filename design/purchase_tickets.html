@@ -1,18 +1,10 @@
-<!doctype html>
-<html lang="en">
+<extends src="./base.html">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./css/style.scss">
-    <!-- Bootstrap CSS -->
+  <block name="title">Purchase Tickets</block>
 
-    <title>Purchase Tickets</title>
-  </head>
+  <block name="navigation"></block>
 
-  <body>
-
+  <block name="header-section">
     <div id="purchase-tickets-section" class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row">
@@ -53,20 +45,20 @@
                       <label for="email">pythonista.email</label>
                       <input type="text" class="form-control" id="email" placeholder="Enter your email address here" required>
                     </div>
-
+    
                     <div class="alert alert-warning" role="alert">
                       By providing a password, you’ll get access to speaker keynotes and development resources.
                     </div>
-
+    
                     <div class="form-group">
                       <label for="password">pythonista.password</label>
                       <input type="password" class="form-control" id="password" placeholder="Enter that hashed password here :-)" required>
                     </div>
-
+    
                     <a href="#make-payment" class="link-button btn btn-block btn-success">CONTINUE TO STEP 2.</a>
                   </form>
                 </div>
-
+    
                 <div class="tab-pane fade" id="make-payment" role="tabpanel">
                   <form>
                     <ul class="container">
@@ -81,7 +73,7 @@
                           </select>
                         </div>
                       </li>
-
+    
                       <li class="row">
                         <div class="col-sm-9">
                           <p>Individual ticket</p>
@@ -93,7 +85,7 @@
                           </select>
                         </div>
                       </li>
-
+    
                       <li class="row">
                         <div class="col-sm-9">
                           <p>Corporate ticket</p>
@@ -106,16 +98,16 @@
                         </div>
                       </li>
                     </ul>
-
+    
                     <p>Have a discount code? <a href="#">Click here</a></p>
-
+    
                     <button type="submit" class="btn btn-block btn-success">CHECKOUT</button>
-
+    
                     <div id="tickets-summary" class="row">
                       <p class="col-sm-12 col-md-4">QTY: 3</p>
                       <p class="col-sm -12 col-md-8 total-fee">TOTAL FEE: N21,000</p>
                     </div>
-
+    
                     <div id="tickets-payment-option" class="row">
                       <div class="col-sm-12 text-center">
                         Verve, MasterCard, Visa
@@ -129,12 +121,12 @@
         </div>
       </div>
     </div>
-
     <div class="copyright">
       <p class="text-center">COPYRIGHT 2017. PYCON NIGERIA 2018</p>
     </div>
+  </block>
 
-    <script src="./js/index.js"></script>
-  </body>
+  <block name="sidebar-counter"></block>
 
-</html>
+  <block name="footer"></block>
+</extends>

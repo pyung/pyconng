@@ -25,6 +25,5 @@ function onPageLoad() {
   insertNumbers();
 }
 $(document).ready(function() {
-  window.w3.includeHTML();
   onPageLoad();
 });
