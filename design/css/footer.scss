@@ -3,6 +3,10 @@
   background-color: #232323;
   padding: 61px 252px 0px 96px;
   font-family: $text_font;
+  @media(max-width:$desktop){
+    padding: 15px;
+    padding-top: 30px;
+  }
   @media(max-width:$mobile){
     padding: 15px;
     padding-top: 30px;
@@ -50,8 +54,11 @@
     height: 163px;
     width: 241px;
     margin-left: 102%;
+    @media(max-width:$desktop){
+      display: none;
+    }
     @media(max-width:$mobile){
-      margin-left: 28%;
+      display: none;
     }
   }
 }

@@ -1,0 +1,162 @@
+#tickets-section {
+    background: url("../img/backgrounds/Purchase-ticket-bg.jpg");
+    background-size: cover;
+    height: 518px;
+
+    .logo {
+      position: absolute;
+      right: 0;
+      @media(max-width:$mobile) {
+        position: relative;
+      }
+    }
+}
+
+.main-content {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.ticket-category {
+  font-family: $default_font;
+  margin-top: 64px;
+  background-color: #f2f2f2;
+  padding: 26px 30px 36px 30px;
+
+  h6 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 33px;
+    height: 132px;
+    width: 132px;
+  }
+
+  p {
+    font-family: $text_font;
+    font-size: 14px;
+    margin-top: 35px;
+  }
+
+  h3 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .price {
+    margin-top: 24px;
+    text-decoration: line-through;
+    text-decoration-color: #11BD8A
+  }
+
+  .early-bird {
+    margin-top: 23px !important;
+    margin-bottom: 12px !important;
+    height: 35px;
+    width: 162px;
+    background-color: #FFDF3C;
+    color: #000000;
+    font-family: $default_font;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 9px;
+  }
+
+  .buy-tickets-button {
+    margin-top: 42px;
+    height: 50px;
+    width: 250px;
+    @media(max-width:$desktop) {
+      width: 100%;
+      padding: 15px !important;
+    }
+    @media(max-width:$mobile) {
+      width: 100%;
+    }
+  }
+}
+
+#payment-section {
+  height: 135px;
+  margin-top: 21.5px;
+  vertical-align: middle;
+
+  @media(max-width:$desktop) {
+    height: auto;
+    width: 100%;
+  }
+
+  @media(max-width:$mobile){
+    height: auto;
+    width: 100%;
+  }
+
+  .payment-description {
+    margin-top: 29.5px;
+    line-height: 36px;
+  }
+
+  .supported-cards {
+    margin-top: 37.5px;
+    height: 54px;
+    @media(max-width:$mobile){
+      width: 100%;
+    }
+  }
+}
+
+#ticket-value-section {
+  margin-top: 81.5px;
+
+  .value-title {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px;
+    width: 355px;
+    @media(max-width:$mobile){
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .value-description {
+    margin-top: 10px;
+    line-height: 36px;
+  }
+}
+
+#goodies-section {
+  div {
+    margin-top: 74.05px;
+  }
+
+  img {
+    height: 73.85px;
+    @media(max-width:$mobile) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  p {
+    margin-top: 21.5px;
+    font-size: 16px;
+    width: 290px;
+    line-height: 36px;
+    @media(max-width:$desktop) {
+      width: 100%;
+    }
+    @media(max-width:$mobile) {
+      text-align: center;
+    }
+  }
+}

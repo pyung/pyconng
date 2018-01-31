@@ -71,9 +71,15 @@ button, .link-button {
   color: $primary_color;
 }
 
+.alert {
+  height: auto;
+  border: 1px solid #CBC290;
+  background-color: #FFFAE3;
+}
+
 @import "./navbar.scss";
 
-#header-section, #speakers-section, #purchase-tickets-section {
+#header-section, #speakers-section, #tickets-section, #purchase-tickets-section {
   font-family: $mono_font_name;
   h1 {
     color: $primary_color;
@@ -212,8 +218,10 @@ h3.section-title{
 /* Styles for the speakers page */
 @import "./speakers.scss";
 
+/** Styles for the tickets page */
+@import "./tickets.scss";
+
 /*Styles for the purchase tickets page*/
 @import "./purchase-tickets.scss";
 
-/* End styles for Speaker's page */
 @import "./footer.scss";

@@ -1,0 +1,136 @@
+<extends src="./base.html">
+
+  <block name="title">Tickets</block>
+
+  <block name="navigation"></block>
+
+  <block name="header-section">
+    <div id="tickets-section" class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="logo" src="./img/logo-light.svg" />
+            <br /><br /><br />
+            <p>>>> Calling all Pythonistas!</p>
+            <h1 class="display-4">
+              Python <br />
+              Conference 2018
+            </h1>
+            <p class="lead">
+              September 15 — 17, 2018 08:00AM - O5:00PM Lagos, Nigeria
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </block>
+
+  <block name="content">
+    <div class="main-content container">
+      <div class="row text-center">
+        <div class="col-sm-12 col-md-4">
+          <div class="ticket-category">
+            <h6>STUDENT PACKAGE</h6>
+            <img src="./img/tickets/student-package@2x.png" />
+
+            <p>For pupils, undergraduate students interested in Python</p>
+            <h3 class="price">N4,000</h3>
+
+            <p class="alert early-bird">Early Bird Pricing</p>
+            
+            <h3>N3,000</h3>
+
+            <a href="./purchase_tickets.html" class="link-button btn btn-success buy-tickets-button">BUY TICKETS</a>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <div class="ticket-category">
+            <h6 class="text-center">INDIVIDUAL PACKAGE</h6>
+            <img src="./img/tickets/student-package@2x.png" />
+            
+            <p>For hobbyist python developers and interested individuals</p>
+            <h3 class="price">N10,000</h3>
+
+            <p class="alert early-bird">Early Bird Pricing</p>
+            
+            <h3>N6,000</h3>
+
+            <a href="./purchase_tickets.html" class="link-button btn btn-success buy-tickets-button">BUY TICKETS</a>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4">
+          <div class="ticket-category">
+            <h6 class="text-center">CORPORATE PACKAGE</h6>
+            <img src="./img/tickets/student-package@2x.png" />
+
+            <p>For the working class who are python experts in the industry</p>
+            <h3 class="price">N20,000</h3>
+
+            <p class="alert early-bird">Early Bird Pricing</p>
+            
+            <h3>N10,000</h3>
+
+            <a href="./purchase_tickets.html" class="link-button btn btn-success buy-tickets-button">BUY TICKETS</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="payment-section" class="alert">
+        <div class="row">
+          <div class="col-sm-12 col-md-7">
+            <p class="payment-description">
+              You can pay with MasterCard, Visa or Verve Cards. Tickets are invoiced by the Python Software Community.
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-5">
+            <img class="supported-cards img-fluid" src="./img/Group 2@2x.png" />
+          </div>
+        </div>
+      </div>
+
+      <div id="ticket-value-section" class="row">
+        <div class="col-sm-12">
+          <div class="value-title">THE VALUE FOR THE TICKET INCLUDES</div>
+          <br />
+          <p class="value-description">Purchasing tickets to the PyCon Event gives you access to the following awesome stuff:</p>
+        </div>
+      </div>
+
+      <div id="goodies-section" class="row">
+        <div class="col-sm-6 col-md-4">
+          <img src="./img/goodies/talsks@2x.png" />
+          <p>More than 20 talks and exciting keynotes</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <img src="./img/goodies/foodie@2x.png" />
+          <p>Light Breakfast, One buffet lunch and two coffee breaks</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <img src="./img/goodies/free-wfi@2x.png" />
+          <p>Free Wi-Fi Internet Connectivity throughout</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <img src="./img/goodies/get-discovered@2x.png" />
+          <p>Get discovered by companies looking to hire</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <img src="./img/goodies/awesome-gadgets@2x.png" />
+          <p>Receive awesome gadgets offered by our sponsors</p>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+          <img src="./img/goodies/fun@2x.png" />
+          <p>Lots of fun, activities and networking.</p>
+        </div>
+      </div>
+    </div>
+
+    <br /><br /><br /><br /> <!-- Because of the sidebar numbering-->
+  </block>
+</extends>
