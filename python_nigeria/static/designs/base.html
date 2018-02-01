@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,36 +9,33 @@
     <!-- Bootstrap CSS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>
-        <block name="title"></block>
+      <block name="title"></block>
     </title>
-</head>
+  </head>
 
-<body>
-  <block name="navigation">
-      <include src="./includes/navigation_cfp.html"></include>
-  </block>
-
-    <block name="header-section">
+  <body>
+    <block name="navigation">
+      <include src="./includes/navigation.html"></include>
     </block>
+    <block name="header-section"></block>
 
     <div class="content-section container-fluid">
-        <block name="sidebar-counter">
-            <div class="sidebar">
-                <span class="python-start"> &#60;&#47; </span>
-                <div class="numbers">
-                    <!-- Inserted with jQuery -->
-                </div>
-            </div>
-        </block>
-        <div class="main-content container">
-            <block name="content">
-            </block>
+      <block name="sidebar-counter">
+        <div class="sidebar">
+          <span class="python-start"> &#60;&#47; </span>
+          <div class="numbers">
+            <!-- Inserted with jQuery -->
+          </div>
         </div>
+      </block>
+      <div class="main-content">
+        <block name="content"></block>
+      </div>
     </div>
     <block name="footer">
-        <include src="./includes/footer.html"></include>
+      <include src="./includes/footer.html"></include>
     </block>
     <script src="./js/index.js"></script>
-</body>
+  </body>
 
 </html>
