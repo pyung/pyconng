@@ -8,6 +8,7 @@
 
   h2 {
     font-size: 32px;
+    font-family: $default_font;
   }
 
   p {
@@ -33,6 +34,7 @@
   margin-top: 45px;
   h1, h2 {
     color: #11BD8A;
+    font-family: $default_font;
   }
 
   h1 {
@@ -41,6 +43,7 @@
 
   h2 {
     font-size: 27px;
+    letter-spacing: 1px;
   }
 
   ul {
