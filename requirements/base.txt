@@ -1,6 +1,6 @@
 # Bleeding edge Django
-git+git://github.com/pinax/symposion.git
-django==1.10
+-e git+git://github.com/pyung/symposion#egg=symposion
+django==1.11.8
 
 # Configuration
 django-environ==0.4.4
